@@ -1,10 +1,12 @@
-streamlit
 google-generativeai
 python-dotenv
 pandas
-numpy
-PyPDF2
+sqlalchemy
 python-docx
+PyPDF2
 fpdf2
 tabulate
-sqlalchemy
+rich
+streamlit
+chromadb
+sentence-transformers
