@@ -8,3 +8,4 @@ python-docx
 fpdf2
 tabulate
 sqlalchemy
+google-genai
