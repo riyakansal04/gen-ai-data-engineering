@@ -1,0 +1,10 @@
+streamlit
+google-generativeai
+python-dotenv
+pandas
+numpy
+PyPDF2
+python-docx
+fpdf2
+tabulate
+sqlalchemy

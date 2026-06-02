@@ -1,0 +1,8 @@
+[server]
+port = 8000
+enableCORS = false
+enableXsrfProtection = false
+headless = true
+
+[browser]
+gatherUsageStats = false

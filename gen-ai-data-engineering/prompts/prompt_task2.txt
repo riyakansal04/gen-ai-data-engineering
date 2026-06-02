@@ -1,0 +1,26 @@
+You are a data analyst. Analyze the following user activity logs 
+and return ONLY a valid JSON object — no explanation, no markdown, 
+no code blocks, just raw JSON.
+
+User Activity:
+{activity_text}
+
+Return exactly this JSON structure:
+{
+    "summary": "brief summary of all user activity",
+    "total_users": {total_users},
+    "purchasing_users": "count of users who made a purchase",
+    "total_revenue": "sum of all purchase amounts",
+    "insights": [
+        "insight 1",
+        "insight 2",
+        "insight 3"
+    ]
+}
+
+Rules:
+- total_users must equal {total_users}
+- purchasing_users must only count users with amount > 0
+- total_revenue must be the exact sum of all amounts
+- insights must be meaningful observations about the data
+- Return ONLY the JSON — nothing else

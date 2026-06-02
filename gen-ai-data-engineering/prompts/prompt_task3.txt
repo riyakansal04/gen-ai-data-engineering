@@ -1,0 +1,17 @@
+You are a data generation expert. Below is a sample dataset in CSV format.
+
+Sample Data:
+{csv_content}
+
+Task:
+Generate {num_rows} new realistic rows that are similar in structure and style 
+to the sample data above.
+
+Rules:
+- Follow the exact same column names and order
+- Keep data realistic and consistent (age vs experience, salary vs department)
+- Do not repeat any existing names or employee IDs
+- Employee IDs must start from {start_id}
+- Cities should be real US cities
+- Return ONLY the new CSV rows — no headers, no explanation, no markdown
+- Each row on a new line, values separated by commas

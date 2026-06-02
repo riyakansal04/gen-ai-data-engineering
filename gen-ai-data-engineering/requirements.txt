@@ -1,0 +1,12 @@
+google-generativeai
+python-dotenv
+pandas
+sqlalchemy
+python-docx
+PyPDF2
+fpdf2
+tabulate
+rich
+streamlit
+chromadb
+sentence-transformers

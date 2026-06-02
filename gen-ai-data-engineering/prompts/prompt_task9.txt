@@ -1,0 +1,19 @@
+You are an evaluation judge for an AI system.
+
+Question asked: {question}
+Expected answer should contain: {expected}
+Actual answer given: {actual}
+
+Evaluate the actual answer and respond with ONLY a JSON object:
+{{
+  "score": <0-10>,
+  "verdict": "<CORRECT|PARTIAL|WRONG|HALLUCINATED>",
+  "reason": "<one sentence explanation>"
+}}
+
+Scoring rules:
+- CORRECT (8-10): answer contains the expected information accurately
+- PARTIAL (4-7): answer is partially correct or missing some details
+- WRONG (0-3): answer is factually incorrect
+- HALLUCINATED (0): expected was "not available" but answer gave made-up info
+- CORRECT (10): expected was "not available" and answer correctly said not available

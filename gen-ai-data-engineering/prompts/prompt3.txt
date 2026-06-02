@@ -1,0 +1,41 @@
+Context:
+A new sales_transactions dataset lands daily in our data lake.
+Sample data:
+
+| txn_id | customer_id | amount | currency | txn_date   | status  |
+|--------|-------------|--------|----------|------------|---------|
+| T001   | C123        | 250.00 | USD      | 2024-01-15 | SUCCESS |
+| T002   | C456        | -50.00 | EUR      | 2024-01-15 | PENDING |
+| T003   | NULL        | 0.00   | GBP      | 2025-13-45 | FAILED  |
+| T004   | C789        | 99999  | XYZ      | 2024-01-16 | SUCCESS |
+
+This data feeds our finance team revenue dashboard.
+Data comes from 3 different upstream source systems.
+
+Role:
+Act as a data quality engineer with expertise in Great Expectations
+and dbt tests for financial data validation.
+
+Task:
+Analyze the sample data above, identify all data quality issues,
+and generate a comprehensive set of data quality rules with
+implementation code.
+
+Constraints:
+- Implement rules using both Great Expectations and dbt tests
+- Rules must cover completeness, validity, consistency, uniqueness, timeliness
+- Soft rule failures must flag but not drop records
+- Hard rule failures like negative amounts must block the pipeline
+- Rules must be reusable across similar financial tables
+
+Format:
+- List of identified data quality issues in table format
+- Categorized DQ rules: Hard blocking vs Soft warning
+- Great Expectations code for top 5 rules
+- dbt test YAML for the same rules
+- Recommended alerting thresholds
+
+Examples:
+- Issue: NULL customer_id → Hard block → expect_column_values_to_not_be_null
+- Issue: Invalid date 2025-13-45 → Hard block → regex date validation
+- Issue: Negative amount -50.00 → Hard block → expect values between 0 and max

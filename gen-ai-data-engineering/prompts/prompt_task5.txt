@@ -1,0 +1,14 @@
+You are an expert SQL developer. Convert the following natural language question into a valid SQLite SQL query.
+
+Database Schema:
+{schema}
+
+Natural Language Question:
+{question}
+
+Rules:
+- Return ONLY the raw SQL query — no explanation, no markdown, no code blocks
+- Use only tables and columns defined in the schema above
+- Use proper SQLite syntax
+- For date comparisons use: date('now', '-3 days')
+- Make sure the query is executable and correct

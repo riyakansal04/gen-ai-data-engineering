@@ -1,0 +1,14 @@
+{
+  "sales": [
+    {"sale_id": 1,  "customer_id": 1, "product": "Laptop",     "amount": 1200.00, "days_ago": 1},
+    {"sale_id": 2,  "customer_id": 2, "product": "Phone",      "amount": 800.00,  "days_ago": 1},
+    {"sale_id": 3,  "customer_id": 1, "product": "Tablet",     "amount": 450.00,  "days_ago": 2},
+    {"sale_id": 4,  "customer_id": 3, "product": "Laptop",     "amount": 1500.00, "days_ago": 2},
+    {"sale_id": 5,  "customer_id": 4, "product": "Headphones", "amount": 200.00,  "days_ago": 3},
+    {"sale_id": 6,  "customer_id": 2, "product": "Monitor",    "amount": 350.00,  "days_ago": 5},
+    {"sale_id": 7,  "customer_id": 5, "product": "Keyboard",   "amount": 75.00,   "days_ago": 7},
+    {"sale_id": 8,  "customer_id": 3, "product": "Phone",      "amount": 900.00,  "days_ago": 10},
+    {"sale_id": 9,  "customer_id": 4, "product": "Laptop",     "amount": 1350.00, "days_ago": 15},
+    {"sale_id": 10, "customer_id": 5, "product": "Tablet",     "amount": 500.00,  "days_ago": 20}
+  ]
+}

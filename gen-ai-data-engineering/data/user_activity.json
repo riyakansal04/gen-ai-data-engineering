@@ -1,0 +1,19 @@
+{
+  "user_activity": [
+    {
+      "user": "User A",
+      "action": "logged in and purchased a laptop",
+      "amount": 1200
+    },
+    {
+      "user": "User B", 
+      "action": "logged in but did not make any purchase",
+      "amount": 0
+    },
+    {
+      "user": "User C",
+      "action": "purchased a phone",
+      "amount": 800
+    }
+  ]
+}

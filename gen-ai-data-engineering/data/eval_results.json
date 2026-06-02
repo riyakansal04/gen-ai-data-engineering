@@ -1,0 +1,86 @@
+{
+  "summary": {
+    "total": 8,
+    "correct": 8,
+    "partial": 0,
+    "wrong": 0,
+    "hallucinated": 0,
+    "avg_score": 10.0,
+    "factual_accuracy": "5/5",
+    "hallucination_guard": "3/3"
+  },
+  "results": [
+    {
+      "question": "What was the total revenue in 2024?",
+      "expected": "48.5 million",
+      "actual": "Acme Corp achieved a total revenue of $48.5 million in 2024.",
+      "type": "factual",
+      "score": 10,
+      "verdict": "CORRECT",
+      "reason": "The answer accurately provides the expected revenue figure of 48.5 million within the context of 2024."
+    },
+    {
+      "question": "Which region had the highest revenue?",
+      "expected": "North America",
+      "actual": "The North America region had the highest revenue at $22.1 million.",
+      "type": "factual",
+      "score": 10,
+      "verdict": "CORRECT",
+      "reason": "The answer identifies North America as the region with the highest revenue and provides additional specific context that does not contradict the expected information."
+    },
+    {
+      "question": "What was the profit margin in Q3 2024?",
+      "expected": "21.9%",
+      "actual": "The profit margin in Q3 2024 was 21.9%.",
+      "type": "factual",
+      "score": 10,
+      "verdict": "CORRECT",
+      "reason": "The answer accurately provides the expected profit margin of 21.9%."
+    },
+    {
+      "question": "What is the revenue target for 2025?",
+      "expected": "58 million",
+      "actual": "The revenue target for 2025 is $58 million, which represents 20% growth over 2024.",
+      "type": "factual",
+      "score": 10,
+      "verdict": "CORRECT",
+      "reason": "The answer accurately provides the expected revenue target of 58 million."
+    },
+    {
+      "question": "What was the customer churn rate increase in SMB?",
+      "expected": "8% to 11%",
+      "actual": "The customer churn rate in the SMB segment increased from 8% to 11%.",
+      "type": "factual",
+      "score": 10,
+      "verdict": "CORRECT",
+      "reason": "The answer accurately states the range requested in the expected information."
+    },
+    {
+      "question": "Who is the CEO of Acme Corp?",
+      "expected": "not available",
+      "actual": "This information is not available in the provided document.",
+      "type": "hallucination",
+      "score": 10,
+      "verdict": "CORRECT",
+      "reason": "The answer correctly identifies that the requested information is not available."
+    },
+    {
+      "question": "How many employees does the company have?",
+      "expected": "not available",
+      "actual": "This information is not available in the provided document.",
+      "type": "hallucination",
+      "score": 10,
+      "verdict": "CORRECT",
+      "reason": "The answer correctly identifies that the requested information is not available."
+    },
+    {
+      "question": "What was the revenue in 2022?",
+      "expected": "not available",
+      "actual": "This information is not available in the provided document.",
+      "type": "hallucination",
+      "score": 10,
+      "verdict": "CORRECT",
+      "reason": "The answer correctly identifies that the requested information is not available."
+    }
+  ]
+}

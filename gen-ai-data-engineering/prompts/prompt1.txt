@@ -1,0 +1,38 @@
+Context:
+I am a data engineer working on a Snowflake data warehouse.
+We have a fact table fact_sales with 1.2 billion rows joined with 3
+dimension tables. This query is taking 45+ minutes during nightly ETL:
+
+    SELECT c.customer_name, p.product_category, d.fiscal_quarter,
+           SUM(f.revenue) AS total_revenue, COUNT(f.sale_id) AS total_orders
+    FROM fact_sales f
+    JOIN dim_customer c ON f.customer_id = c.customer_id
+    JOIN dim_product p ON f.product_id = p.product_id
+    JOIN dim_date d ON f.sale_date = d.date_key
+    WHERE f.sale_date BETWEEN '2023-01-01' AND '2023-12-31'
+    GROUP BY c.customer_name, p.product_category, d.fiscal_quarter
+    ORDER BY total_revenue DESC;
+
+Role:
+Act as a senior Snowflake data warehouse optimization expert
+with 10+ years of experience tuning large-scale analytical queries.
+
+Task:
+Analyze and rewrite the above SQL query to maximize performance.
+Identify bottlenecks and explain what changes you made and why.
+
+Constraints:
+- Use only Snowflake-compatible SQL syntax
+- Do not change the output columns or business logic
+- Focus on performance improvements only
+- Assume clustering keys and warehouse size can be adjusted
+
+Format:
+- Bottleneck Analysis (bullet points)
+- Optimized SQL Query (code block)
+- Explanation of each change (numbered list)
+- Estimated performance improvement (rough %)
+
+Examples:
+- Slow pattern: JOIN on non-clustered key → Fix: Add cluster key
+- Slow pattern: Late filtering → Fix: Push WHERE filters early using CTEs

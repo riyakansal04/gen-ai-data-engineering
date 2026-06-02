@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "What was the total revenue in 2024?",
+      "expected": "48.5 million",
+      "type": "factual"
+    },
+    {
+      "question": "Which region had the highest revenue?",
+      "expected": "North America",
+      "type": "factual"
+    },
+    {
+      "question": "What was the profit margin in Q3 2024?",
+      "expected": "21.9%",
+      "type": "factual"
+    },
+    {
+      "question": "What is the revenue target for 2025?",
+      "expected": "58 million",
+      "type": "factual"
+    },
+    {
+      "question": "What was the customer churn rate increase in SMB?",
+      "expected": "8% to 11%",
+      "type": "factual"
+    },
+    {
+      "question": "Who is the CEO of Acme Corp?",
+      "expected": "not available",
+      "type": "hallucination"
+    },
+    {
+      "question": "How many employees does the company have?",
+      "expected": "not available",
+      "type": "hallucination"
+    },
+    {
+      "question": "What was the revenue in 2022?",
+      "expected": "not available",
+      "type": "hallucination"
+    }
+  ]
+}

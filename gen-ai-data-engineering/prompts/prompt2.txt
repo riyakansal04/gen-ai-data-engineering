@@ -1,0 +1,35 @@
+Context:
+Our company ingests 500,000 clickstream events per minute from a
+mobile app using Kafka → Spark Structured Streaming → Delta Lake.
+We are facing 4 problems:
+1. Data duplication during Spark job restarts
+2. Schema drift when mobile app adds new fields
+3. No alerting when event volume drops below threshold
+4. Late-arriving events up to 6 hours being silently dropped
+
+Role:
+Act as a principal data engineer specializing in real-time streaming
+architectures on Azure and Databricks with deep expertise in
+Delta Lake and Apache Kafka.
+
+Task:
+Design an improved fault-tolerant ingestion pipeline that resolves
+all 4 issues listed above. Provide both the architecture design
+and the key code snippets needed.
+
+Constraints:
+- Must use Azure-native or Databricks-native services only
+- Must handle schema evolution without pipeline downtime
+- Avoid adding more than 2 new services
+- Maintain end-to-end latency under 3 minutes p99
+- Idempotency required — zero duplicate records in sink
+
+Format:
+- Architecture diagram in ASCII
+- Solution for each problem labeled 1 to 4
+- PySpark or Delta code snippets for each fix
+- Trade-offs and limitations of the proposed design
+
+Examples:
+- Problem: Duplicates on restart → Use foreachBatch + Delta MERGE with dedup key
+- Problem: Schema drift → Enable mergeSchema=true + schema registry validation
