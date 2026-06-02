@@ -17,7 +17,7 @@
       "type": "factual",
       "score": 10,
       "verdict": "CORRECT",
-      "reason": "The answer accurately provides the expected revenue figure of 48.5 million within the context of 2024."
+      "reason": "The answer accurately provides the expected revenue figure of 48.5 million within a complete sentence."
     },
     {
       "question": "Which region had the highest revenue?",
@@ -26,7 +26,7 @@
       "type": "factual",
       "score": 10,
       "verdict": "CORRECT",
-      "reason": "The answer identifies North America as the region with the highest revenue and provides additional specific context that does not contradict the expected information."
+      "reason": "The answer identifies North America as the region with the highest revenue and provides additional accurate context."
     },
     {
       "question": "What was the profit margin in Q3 2024?",
@@ -40,7 +40,7 @@
     {
       "question": "What is the revenue target for 2025?",
       "expected": "58 million",
-      "actual": "The revenue target for 2025 is $58 million, which represents 20% growth over 2024.",
+      "actual": "The revenue target for 2025 is $58 million, which represents a 20% growth over 2024.",
       "type": "factual",
       "score": 10,
       "verdict": "CORRECT",
@@ -53,7 +53,7 @@
       "type": "factual",
       "score": 10,
       "verdict": "CORRECT",
-      "reason": "The answer accurately states the range requested in the expected information."
+      "reason": "The answer accurately states the range requested in the expected answer."
     },
     {
       "question": "Who is the CEO of Acme Corp?",
